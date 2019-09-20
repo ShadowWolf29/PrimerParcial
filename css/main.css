@@ -24,17 +24,19 @@ body {
 /*En el header*/
 .header {
     display: flex;/*se pone el display flex*/
-    justify-content: space-between/*se define el espacio del contenido que sera el espacio entre ellos*/
+    justify-content: space-between;/*se define el espacio del contenido que sera el espacio entre ellos*/
+    margin: 1em 5%;/*asignando margin primero arriba abajo , izquierda y derecha*/
+    margin-bottom: 2.8em;/*agragando margen de abajp*/
 }
-
+/*solo para src*/
 .src-only {
     display: none;/*se pone el display "none" para esconder el elemento*/
 }
-
+/*esconder en mobiles*/
 .hide-mobile {
     display: none;/*se pone el display "none" para esconder el elemento, en este caso en moviles*/
 }
-
+/*parrafo*/
 p{
     font-size: 0.75em;/* modificando el tamaño de la fuente*/
     padding: 1rem;/*estableciendo el padding con respecto al root y no al padre*/
@@ -43,23 +45,24 @@ p{
 
 /*se declara el ancho y el margen en la imagen del logo*/
 .logo {
-    width: 90px;/*se declara el ancho en la imagen del logo*/
+    width: 125px;/*se declara el ancho en la imagen del logo*/
     margin: 1em;/*de declara el margen en la imagen del logo*/
 }
-
+/*las opciones*/
 .options {
     color: inherit;/*se hereda el color en este caso blanco*/
     text-decoration: none;/*se quita el decoration de la etiqueta a*/
     position: relative;/*se elije relative para moverla desde la posicion original*/
-    top: 40%;/*se le da un top*/
-    right: 95%;/*se le da un right*/
-    font-size: 1.5rem;/*se le da un tamaño al icono*/
+    top: 10%;/*se le da un top*/
+    right: 25%;/*se le da un right*/
+    font-size: 5.5rem;/*se le da un tamaño al icono*/
 
     display: flex;/*se pone el display flex*/
     flex-wrap: wrap;/*da un salto de linea si los elementos no caben*/
     align-items: flex-start;/*se alinean desde el primero al ultimo*/
 
 }
+/*ultimo elemento de las opciones*/
 .options i:last-child {
     font-size: 1.6rem;/*se le da un tamaño al icono de el ultimo elemento, en este caso el icono de la x*/
 }
@@ -71,15 +74,15 @@ p{
 
 /*en el h2 que esta adentro del big hero*/
 .big-hero h2 {
-    font-size: 1.875em;/*tamaño de la letra*/
+    font-size: 3em;/*tamaño de la letra*/
     font-weight: 700;/*se le da grosor a la fuente*/
     letter-spacing: 0.002em;/*el espaciado entre las letras*/
-    margin-top: 1em ;/*margen de arriba*/
+    margin-top: 0.4em ;/*margen de arriba*/
 }
 
 /*en el p que esta adentro del big hero*/
 .big-hero p {
-    font-size: 0.7em;/*tamaño de fuente*/
+    font-size: 1.3em;/*tamaño de fuente*/
     color: #D7DEE6;/*color de la fuente*/
 
 }
@@ -88,19 +91,30 @@ p{
 .social-links{
     list-style: none;/*se quita la decoracion de la lista*/
     padding: 0;/*se asigna un padding de 0*/
-    margin-top: 0em;/*se le asigna un margin top*/
+    /*se le asigna un margin top*/
     display: flex;/*se pone el display flex*/
     flex-direction: row;/*se define la direccion en filas*/
     justify-content: center;/*se alinian al centro*/
+    
+}
+/*las redes sociales en el big hero*/
+.big-hero .social-links
+{
+    margin-top: -8.1em;/*se le agrega un margin de arriba*/
+    margin-bottom: 12%;/*se le agrega margen de abajo*/
 }
 
 /* Social links, lista, hipervinculos*/
 .social-links li a{
     color: #D7DEE6;/*se le asigna un color de fuente*/
     text-decoration: none;/*se le quita la decoracion a la fuente*/
-    font-size: 2.5em;/*tamaño de la fuente para los iconos*/
+    font-size: 14rem;/*tamaño de la fuente para los iconos*/
 }
+/*se da un espacio entre los elementos*/
+.big-hero .social-links li:first-child a {
+    margin-right: 0.12em;/*magen izquierdo*/
 
+}
 
 .green-area {
     background-color: #0AC693; /*color de fondo*/
@@ -115,9 +129,10 @@ p{
 /*en el h2 de la clase post*/
 .post h2 {
     text-transform: uppercase;/*se ponen las letras en mayusulas*/
-    font-weight: 700;/*se le asigna un grosor a la letra*/
-    font-size: 1.125em;/*se e asigna tamaño de fuente*/
+    font-weight: 900;/*se le asigna un grosor a la letra*/
+    font-size: 1.7em;/*se e asigna tamaño de fuente*/
     margin: 1em;/*se le asigna margen*/
+    margin-bottom: 2em;/*se agrega margen de abajo*/
 }
 
 /*en los ul de post*/
@@ -142,16 +157,16 @@ p{
 }
 /*imagenes del articulo*/
 .post article img{
-    height: 150px;/*altura de la imagen*/
+    height: 240px;/*altura de la imagen*/
     width: 100%;/*ancho de la imagen*/
     object-fit: cover;/*se hace que la imagen se ajuste al molde*/
 }
 /*h3 del articulo*/
 .post article h3 {
     color: #0D5061;/*color de la fuente*/
-    margin-top: 2em;/*margen del top*/
+    margin-top: 0.8em;/*margen del top*/
     padding: 0em 1rem;/*pading primero de arriba y abajo, despues izquierda y derecha*/
-    font-size: 0.9em;/*tamaño de la fuente*/
+    font-size: 1.5em;/*tamaño de la fuente*/
     white-space: nowrap;/*Reduce espacios en blanco, pero suprime saltos de linea del origen.*/
     overflow: hidden;/*El contenido es recortado y no se muestran barras de posición.*/
     text-overflow: ellipsis;/*al no caber el texto pone ... con la opcion ellipsis*/
@@ -160,7 +175,7 @@ p{
 /*p del articulo*/
 .post article p {
     color:#112935;/*color de fuente*/
-    font-size: 0.75em;/*tamaño de fuente*/
+    font-size: 1.1em;/*tamaño de fuente*/
     padding: 1rem;/*se le asigna un padding*/
     line-height: 25px;/*se modifica la altura del parrafo*/
 }
@@ -168,38 +183,45 @@ p{
 /* About */
 
 .about{
-    margin-top: 2em;/*margen de la parte de arriba*/
+    margin-top: 4.2em;/*margen de la parte de arriba*/
 }
 /*en el h2 del about*/
 .about h2 {
     text-transform: uppercase;/*pasar todas las letras a mayusculas*/
     font-weight: 700;/*grosor de fuente*/
-    font-size: 1.125em;/*tamaño de fuente*/
-    margin: 2em;/*se defineun margen*/
+    font-size: 1.7em;/*tamaño de fuente*/
+    margin: 1em;/*se define un margen*/
 }
-
+/*bio info img*/
 .bio-info img{
-   width: 200px;/*ancho de la imagen*/
+    margin-top: 3em;/*se agraga un margen de arriba*/
+    margin-bottom: 1.4em;/*se agraga un margen de abajo*/
+   width: 210px;/*ancho de la imagen*/
 }
-
+/*bio info parafo*/
 .bio-info p{
-    font-size: 16px;/*cambiar el tamaño de fuente*/
+    font-size: 21px;/*cambiar el tamaño de fuente*/
     padding: 2em;/*agregando padding a los 4 lados*/
     text-align: left;/*aliniar el texto a la izquierda*/
     line-height: 25px;/*define el espacio entre lineas*/
     letter-spacing: 2px;/*espaciado entre letras*/
+    margin-bottom: 0.7em;/*se agraga un margen de abajo*/
 }
-
+/*contacto*/
 .contact {
     display: flex;/*definiendo el display*/
     flex-direction: column;/*definienfo la direccion del flex*/
     text-align: left;/*aliniar el texto a la izquierda*/
     padding: 0px 1em;/*agragando padding arriba y abajo, izquierda derecha*/
 }
-
-/*? creo que es agrearle a todos los elementos que esten dentro de contact*/
+/*para los label del formulario*/
+ form label{
+     font-size: 1.7em;/*tamaño de fuente*/
+     font-weight: 700;/*grosor de fuente*/
+ }
+/*todos los elementos que esten dentro de contact*/
 .contact * + * {
-    margin-top: 1.5em;/*agregando margen de arriba*/
+    margin-top: 0.8em;/*agregando margen de arriba*/
 }
 
 /*formulario de contacto*/
@@ -207,14 +229,18 @@ p{
     display: flex;/*definiendo el display*/
     flex-direction: column;/*definienfo la direccion del flex*/
 }
+.contact input
+{
+    margin-bottom: 0.5em;/*texto del input de contacto*/
+}
 
 /*para los input del form, y para el text area*/
 .contact-form input, .contact-form textarea{
-    padding: 1rem 2rem;/*agragando padding arriba y abajo, izquierda derecha*/
+    padding: 1.3rem 3.5rem;/*agragando padding arriba y abajo, izquierda derecha*/
     border: none;/*quitando los vordes*/
-    border-radius: 0px 2em;
-    font-size: 1em;
-    width: 100%;
+    border-radius: 0px 2em;/*radio de las esquinas de los imput*/
+    width: 100%;/*ancho*/
+    font-size: 2em;/*tamaño de la fuente*/
 }
 
 /* Decorando placeholder */
@@ -232,11 +258,13 @@ p{
 /*para el boton de tipo submit*/
 .contact-form input[type=submit] {
     background-color: #F74442;/*para el color de fondo*/
-    font-weight: 400;/*grosor de la letra*/
+    font-weight: 200;/*grosor de la letra*/
     color: white;/*color de la letra*/
-    font-size: 1rem;/*tamaño de la fuente segun el root*/
+    font-size: 1.45rem;/*tamaño de la fuente segun el root*/
+    margin-top: 1.75em;/*margen de arriba*/
+    margin-bottom: 3em;/*margen de abajo*/
+    letter-spacing: 0.05em;/*espacio entre letras*/
 }
-/*?*/
 .black-decoration{
     background-image: url("../images/decoracion_oscura_small.svg");/*imagen de fondo*/
 }
@@ -247,10 +275,25 @@ footer{
     color:#D7DEE6;/*color de letra*/
 }
 /*redes sociales del footer*/
-footer .social-links {
-    margin: 0;/*asignando margenes*/
+footer .social-links li{
+    margin-top: -9em;/*asignando margenes*/
 }
+footer .social-links li:first-child  a{
+    margin-right: 0.18em;/*magen derechoo*/
 
+}
+/*entrando al text area*/
+textarea
+{
+ resize: none;/*quitando el resize*/
+}
+/*parrafo del footer*/
+footer p{
+    font-size: 0.9em;/*tamaño de fuente*/
+    margin-top: -4em;/*margen de arriba*/
+    padding-bottom: 2.5em;/*relleno de abajo*/
+}
+/*menu*/
 .menu {
     background-color: #112935;/*color del menu mobile*/
     position: absolute;/*definiendo la posicion*/
@@ -259,28 +302,76 @@ footer .social-links {
     right: 0;/*asignando un right*/
     width: 100vw;/*asignando el ancho*/
     height: calc(100vh - 60px);/*definiendo la altura*/
-}
-
-.menu {
-    list-style: none;/*qitando el estilo de la lista*/
+    list-style: none;/*quitando el estilo de la lista*/
     text-align: left;/*aliniando el texto a la derecha*/
     padding: 1em;/*asignando un padding*/
 }
+/*listas del menu*/
 .menu li {
     display: block;/*definiendo el displey*/
     padding: 0.5em;/*asignando un padding*/
     margin-top: 5px;/*asignando el margin de ariba*/
 }
-
+/*links de las listas del menu*/
 .menu li a {
     color: white;/*asignando un color de letra*/
     text-decoration: none;/*quitando la decoracion del tecto*/
     
 }
+/*se hace mas grande la imagen en el bug hero*/
+.big-hero .container img
+{
+    height: 172px;/*se agrega altura*/
+    width: auto;/*se le pone un ancho automatico*/
+    margin-bottom: 6%;/*margen de abajo*/
+}
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
   
+    /*En el header*/
+    .header a{
+        font-size: 1.2em;
+        
+    }
+    .container
+    {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .header
+    {
+        margin: 0% 2%;
+    }
+    .about
+    {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3%;
+    }
+    .bio-info
+    {
+        margin-top: 2%;
+        float: left;
+        width: 50%;
+    }
+    .contact
+    {
+        margin-top: 2%;
+        float: right;
+        width:50%;
+    }
+    .contact-form input[type=submit]
+    {
+        width: 50%;
+    }
+    .social-links li a
+    {
+        font-size: 5em;
+    }
+    
+
     /*las listas del post*/
     .post ul {
         list-style: none;/*eliminando el estilo de las listas*/
@@ -321,16 +412,46 @@ footer .social-links {
         margin-top: 1em;/*definiendo el margen de arriba*/
     }
 
-
-
-
-    /*TODO: FALTA CSS */
 } 
 
 @media only screen and (min-width: 1024px) {
 
-       /*TODO: FALTA CSS */
+    .menu li a:hover{
+        color: #F74442;
+        
+    }
+    .container
+    {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 
+    .header
+    {
+        margin: 0% 2%;
+    }
+    .about
+    {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3%;
+    }
+    .bio-info
+    {
+        margin-top: 2%;
+        float: left;
+        width: 50%;
+    }
+    .contact
+    {
+        margin-top: 2%;
+        float: right;
+        width:50%;
+    }
+    .contact-form input[type=submit]
+    {
+        width: 50%;
+    }
 
 
 }
